@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Etch A Sketch</title>
+  </head>
+  <body>
+    <div id="container-main">
+      <div class="container-body">
+        <div class="container-board">
+          <div class="buttons">
+            <div>
+              <p id="canvas-size">Canvas size</p>
+              <input
+                id="grid-slider"
+                name="gridSlider"
+                type="range"
+                min="8"
+                max="64"
+                value="16"
+                class="slider"
+                autocomplete="off"
+                oninput="sliderChange(this.value)"
+              />
+              <p id="slider-value">16 x 16</p>
+            </div>
+            <input
+              type="color"
+              value="#e66465"
+              id="color-picker"
+              autocomplete="off"
+            />
+            <label>Pen color</label>
+            <input
+              type="color"
+              value="#FFFFFF"
+              id="canvas-color"
+              autocomplete="off"
+            />
+            <label>Canvas color</label>
+            <button id="pen-button" class="side-buttons active">Pen</button>
+            <button id="rainbow-button" class="side-buttons">Rainbow</button>
+            <button id="shading-button" class="side-buttons">Shading</button>
+            <button id="eraser-button" class="side-buttons">Eraser</button>
+            <button id="clear-button">Clear</button>
+          </div>
+          <div id="grid-main"></div>
+          <div class="text-right">
+            <h1>Etch-A-Sketch made by savisnapuu</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
