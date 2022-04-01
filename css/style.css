@@ -57,6 +57,7 @@ body {
   -ms-user-select: none;
   border: 2px dashed #1d3557;
   border-left: none;
+  gap: 1px;
 }
 
 #grid-main:after {
@@ -94,7 +95,6 @@ button {
   cursor: pointer;
   color: #e63946;
   border: 2px solid #e63946;
-  transform: scale(1.05);
   font-size: 18px;
 }
 

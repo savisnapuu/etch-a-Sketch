@@ -36,7 +36,6 @@ function sliderChange(val){
 document.getElementById("grid-slider").addEventListener("change", (e) => {
     gridSlider = e.target.value;
     createBoard(gridSlider);
-    console.log(gridSlider)
 })
 
 function hexToRGB(hex, alpha) {
@@ -106,7 +105,7 @@ document.getElementById("canvas-color").addEventListener("change", onChangeCanva
 document.getElementById("pen-button").addEventListener("click", function() { mode = "pen";});
 document.getElementById("rainbow-button").addEventListener("click", function() { mode = "rainbow";});
 document.getElementById("shading-button").addEventListener("click", function() { mode = "shading";});
-document.getElementById("color-picker").addEventListener("change", (e) => {penColor = e.target.value; mode = "default"})
+document.getElementById("color-picker").addEventListener("change", (e) => {penColor = e.target.value})
 document.getElementById("clear-button").addEventListener("click", clear);
 document.getElementById("eraser-button").addEventListener("click", eraser);
 
